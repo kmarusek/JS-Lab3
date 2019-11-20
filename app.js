@@ -9,10 +9,10 @@ const randomDamage = () => {
 // and opt2. chooseOption does two things:
 const chooseOption = (opt1, opt2) => {
 
-    // ○ Declares and initializes a variable named randNum to either a 0 or 1, randomly.
-    // ○ Returns opt1 if randNum is equal to 0 otherwise return opt2 . (Use a ternary
-    // operator)
+        // ○ Declares and initializes a variable named randNum to either a 0 or 1, randomly.
     let randNum = (Math.round(Math.random()));
+        // ○ Returns opt1 if randNum is equal to 0 otherwise return opt2 . (Use a ternary
+        // operator)
     return ((randNum === 0) ? opt1 : opt2);
 }
 
@@ -44,6 +44,7 @@ function fight(player1, player2, player1Health, player2Health) {
         // chooseOption function with player1 and player2 as arguments.
         let attacker = chooseOption(player1, player2);
 
+        
         // ■ Has an if statement that is triggered when attacker is equal to player1.
         // ● Set player2Health equal to the product of attackPlayer with
         // player2Health as its argument.
@@ -99,9 +100,7 @@ let logDeath = (winner, loser) => {
     console.log(winner + ' defeated ' + loser);
 }
 
-fight('Captain Kev', 'Hitler', 100, 100);
 
-// ● Lastly, call the fight function with the required four parameters. You pick the names
-// and starting health. For example: player1: “Mitch”, player2: “Adam”, player1Health: 100,
-// player2Health: 10
+
+
 
